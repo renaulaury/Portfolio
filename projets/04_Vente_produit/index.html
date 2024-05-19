@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles_landing_r+.css" rel="stylesheet">
+        <title>Vente de produits</title>
+    </head>
+
+    <body>
+        <div class="div_header">
+            <header id="header">
+                <div id="notre_histoire" class="block_logo">
+                    <img src="images/00_Logo_R+_blc.png" id="header-img" style="fill:white" alt="Logo Rammstein"/>
+                    <p>Rammstein</p>
+                </div>
+
+                <nav id="nav-bar">
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="#notre_histoire">
+                            Notre histoire</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#shop">Shop</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#cgv">CGV</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <section>
+            <form method="post" action="https://www.freecodecamp.com/email-submit" id="form">
+                <div class="p_form">
+                    <p>
+                    Inscrivez vous vite :
+                    </p>
+                </div>
+                    <p class="email">
+                        <input type="email" name="email" id="email" placeholder="Votre email">
+                    </p>
+                    <p>
+                        <input type="submit" id="submit" value="Valider"/>
+                    </p>
+            </form>
+
+            <article class="block_section">
+                <div class="avantages">
+                    <p>
+                        - Avantages réservés aux adhérents
+                    </p>
+                    <p>
+                        - Livraison gratuite et sous 48h
+                    </p>
+                    <p>
+                        - Nouvelles promotions tous les mois
+                    </p>
+                </div>
+
+                <div class="video">
+                    <video src="videos/Rammstein_R+.mp4" id="video" 
+                           poster="videos/ramstein.jpg" alt="Clip Rammstein_R+" 
+                           controls>
+                    </video>
+                </div>
+            </article>
+
+            <aside id="shop">
+                <div class="aside">
+                    <h4>Adhésion LIFAD</h4>
+                    <p class="prix">
+                        <a href="#">25 €</a>
+                    </p>
+                        <img src="images/01_Lifad_logo.jpg" alt="Logo de LIFAD"/>
+                </div>
+
+                <div class="aside">
+                    <h4>Places de concert</h4>
+                    <p class="prix">
+                        <a href="#">A partir de 
+                           69 €</a>
+                    </p>
+                    <img src="images/02_concert_R+.jpeg" class="concert" alt="Affiche du concert 2023"/>
+                </div>
+
+            <div class="aside">
+                <h4>Zeit : Edition spéciale</h4>
+                <p class="prix">
+                    <a href="#">28 €</a></p>
+                    <img src="images/03_album_zeit.jpg" alt="Pochette de l'album Zeit"/>
+            </div>
+        </aside>
+        </section>
+
+        <footer id="cgv">
+            <div class="footer">
+                <div class="rgpd">
+                    <p>
+                        Les informations présentées ici sont fictives, utilisées uniquement à des 
+                        fins d'entraînement, et ne contiennent aucune donnée personnelle réelle en accord 
+                        avec le RGPD.
+                    </p>
+                    <p>
+                        Sources : <a href="https://shop.rammstein.de/en" 
+                        alt="Site de marchandising Rammstein Shop">Rammstein shop</a>
+                    </p>
+                </div>
+                
+                <div class="contact">
+                    <p>
+                        <a href="#nous_contacter">Nous contacter</a>
+                     </p>
+                     <p>©2022 Tous droits réservés</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

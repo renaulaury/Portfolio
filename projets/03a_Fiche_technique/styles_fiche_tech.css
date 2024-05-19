@@ -1,0 +1,135 @@
+header {
+    left:30%;
+    text-align:center;
+    padding-left: 30%;
+}
+
+body {
+    font-family: 'comic sans ms', 'arial', 'Times New Roman';
+}
+
+section {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+nav {
+    position:fixed;
+    top:0;
+    left:1%;
+    text-decoration: none;
+    overflow: scroll;
+    border-right: 5px solid;
+    border-color:#303030;
+    width:26%;
+    height:100%;
+}
+
+nav a {
+    color:#303030;
+    text-decoration:none;
+}
+
+nav ul {
+    display:flex;
+    flex-direction:column;
+    list-style-type:none; 
+    padding:3%; 
+}
+
+nav li {
+    border-bottom: 1px solid;
+    border-color: darkgrey;
+    padding:10% 0 10% 0;
+}
+
+.intro {
+    padding-top:70%
+}
+
+.border {
+    border-bottom:none;
+}
+
+.categories {
+    padding:3% 3% 0 30%;
+    text-align: justify;
+    width:100%;
+}
+
+.img2_pr100 {
+    display: none;
+}
+.fiches {
+    display:flex;
+}
+
+.img_pr100 {
+    width: 30%;
+}
+
+.fiches div {
+    width: 70%;
+    padding-left: 5%;
+}
+
+p, div ul, span {
+    color:darkgrey;
+}
+
+.padd, p {
+    padding-bottom:3%;
+}
+
+h4 {
+    font-weight: lighter;
+    text-decoration: underline;    
+}
+
+span {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 3% 3% 0 30%;    
+}
+
+footer p {
+    color: black;
+}
+
+@media screen and (max-width: 1700px) {
+    .fiches img {
+        width:100%;
+    }
+    
+    .fiches div {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+     .fiches {        
+        display:block;
+        width:100%;
+    }
+
+    .fiches div {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .img_pr100 {
+        display: none;
+    }
+
+    .img2_pr100 {
+        display:block;
+        width:100%; 
+    }
+
+    .img2_pr100 img {
+        width: 30%;
+        padding-left:35%;
+    }
+}

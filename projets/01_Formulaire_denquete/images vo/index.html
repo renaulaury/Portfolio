@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="styles_form_cinema.css" rel="stylesheet"/>
+        <title>Formulaire</title>
+    </head>
+
+    <header>
+        <h1 id="title">Formulaire de satisfaction</h1>
+        <p id="description">Merci de nous aider à nous améliorer</p>
+    </header>
+  
+    <body>
+        <form id="survey-form" method="post" action="traitement.php">
+            <fieldset>
+                <div>
+                    <p class="champs">
+                        <label id="name-label" for="name">Nom, prénom</label> 
+                        <input type="text" 
+                               name="nom prenom" 
+                               id="name" 
+                               placeholder="Votre nom, prénom" 
+                               required>
+                    </p>
+
+                    <p class="champs">
+                        <label id="email-label"for="email">Email</label>
+                        <input type="email" 
+                               id="email" 
+                               placeholder="Votre email"
+                               required>
+                    </p>
+
+                    <p class="champs">
+                        <label id="number-label" for="age">Age</label>
+                        <input type="number" 
+                               id="number" 
+                               min="18"
+                               max="100"
+                               placeholder="Votre âge">
+                    </p>
+                
+                    <p class="champs">
+                        <label for="option">Quelle est votre situation actuelle?</label>
+                        <select id="dropdown" name="option">
+                            <option value="Sélectionner votre situation" 
+                                    selected>Sélectionner votre situation</option>
+                            <option value="Etudiant">Etudiant</option>
+                            <option value="Travail à temps plein">Travail à temps plein</option>
+                            <option value="Sans emploi">Sans emploi</option>
+                            <option value="Je préfère ne pas en parler">Je préfère ne pas en parler</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </p>
+                </div>
+                
+                <div>
+                    <p class="champs">Recommanderiez vous notre cinéma, à un ami?
+                        <p>
+                            <input type="radio" 
+                                   name="boutonrecommand" 
+                                   id="recommandation1"
+                                   value="Absolument"
+                                   checked/>
+                                   <label>Absolument</label>
+                        </p>
+                        </p>
+                            <input type="radio" 
+                                   name="boutonrecommand" 
+                                   id="recommandation2"
+                                   value="Peut etre"/>
+                                   <label for="recomandation2">Peut-être</label>
+                        </p>
+                        <p>
+                            <input type="radio" 
+                                   name="boutonrecommand" 
+                                   id="recommandation3"
+                                   value="Je ne pense pas"/>
+                                   <label>Je ne pense pas</label>
+                        </p>
+                    </p>
+                </div>
+                <div>  
+                    <p class="champs">Quand préférez vous venir vous divertir ?
+                        <select id="dropdown2" name="option">
+                            <option value="Sélectionner votre situation" selected>Sélectionner votre situation</option>
+                            <option value="Semaine Journée">Semaine en journée</option>
+                            <option value="Semaine Soirée">Semaine en soirée</option>
+                            <option value="Week end Journée">Week-End en journée</option>
+                            <option value="Week end Soirée">Week-End en soirée</option>
+                            <option value="Semaine et week end Journée">Semaine et week end en journée</option>
+                            <option value="Semaine et week end Soirée">Semaine et week end en soirée</option>
+                        </select>
+                    </p>
+                </div>
+                <div>
+                    <p>Quels sont vos genres cinématographiques préférés ?</p>
+                    <div class="listing">
+                        <p>
+                            <input type="checkbox" 
+                                name="boutonskills" 
+                                id="skill1"
+                                value="Action"/>
+                                <label>Action</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" 
+                                name="boutonskills" 
+                                id="skill7"
+                                value="Animations"/>
+                                <label>Animations</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" 
+                                name="boutonskills" 
+                                id="skill3"
+                                value="Comedie"/>
+                                <label>Comédie</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" 
+                                name="boutonskills" 
+                                id="skill9"
+                                value="Documentaires"/>
+                                <label>Documentaires</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" 
+                                name="boutonskills" 
+                                id="skill4"
+                                value="Drame"/>
+                                <label>Drame</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" 
+                                name="boutonskills" 
+                                id="skill2"
+                                value="Guerre"/>
+                                <label>Guerre</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" 
+                                name="boutonskills" 
+                                id="skill6"
+                                value="Horreur"/>
+                                <label>Horreur</label>
+                        </p>                    
+                        <p>
+                            <input type="checkbox" 
+                                name="boutonskills" 
+                                id="skill8"
+                                value="Policier"/>
+                                <label>Policier</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" 
+                                name="boutonskills" 
+                                id="skill10"
+                                value="Romance"/>
+                                <label>Romance</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" 
+                                name="boutonskills" 
+                                id="skill5"
+                                value="Science fiction"/>
+                                <label>Sciences Fiction</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" 
+                                name="boutonskills" 
+                                id="skill11"
+                                value="Autre"/>
+                                <label>Autre</label>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="champs">Avez-vous des idées pour améliorer votre séjour dans notre établissement ?
+                        <textarea placeholder="Rédigez votre commentaire ici..."></textarea>
+                    </p>
+                </div>
+
+                <div class="submit_div">
+                    <input id="submit" 
+                           type="submit" 
+                           value="Merci de votre aide !"/>
+                </div>
+            </fieldset>
+        </form>
+  </body>
+</html>

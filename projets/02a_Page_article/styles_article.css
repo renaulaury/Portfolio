@@ -1,0 +1,128 @@
+@font-face {
+    font-family: leanderregular;
+    src: url('polices/Leander/leander-webfont.eot');
+    src: url('polices/Leander/leander-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/Leander/leander-webfont.woff2') format('woff2'),
+         url('polices/Leander/leander-webfont.woff') format('woff'),
+         url('polices/Leander/leander-webfont.ttf') format('truetype'),
+         url('polices/Leander/leander-webfont.svg#leanderregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, body {
+    font-family: leanderregular;
+    font-weight:lighter;
+}
+
+body, .chronologie h2 {
+    background-color:cornsilk;
+    text-align:center;
+}
+
+.block_img {
+    background-color:white;
+    padding:2%;
+    margin:2%;
+}
+
+.section_chrono {
+    margin:auto 20%;
+}
+
+.div_chrono {
+    margin:auto 15%;
+    text-align:left;
+}
+
+.block_chrono {
+    display:flex;
+}
+
+.block_naiss {
+    display:flex;
+    margin:auto 9%;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.txt {
+   color:#303030;
+}
+
+ul {
+    list-style-type: none;
+    margin:2% 20% 3%;
+}
+
+.naiss, footer h3{
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 2%;
+    margin-bottom:3%;
+}
+
+.citation2 {
+    text-align:center;
+    margin:2% 10% 3%;
+    color:rgb(151, 150, 150);
+}
+
+.alinea {
+    margin-bottom:0; 
+}
+
+.alinea1 {
+    padding-left: 9%;
+    margin:0;
+}
+
+.alinea2 {
+    padding-left: 26.4%;
+    margin:0;
+}
+
+.alinea3 {
+    padding-left: 25.6%;
+    margin:0;
+}
+
+.alinea4 {
+    padding-left: 9%;
+}
+
+.alinea5 {
+    padding-left: 8.7%;
+    margin:0;
+}
+
+.margin {
+    margin-bottom:3%;
+}
+
+footer {
+    display:flex;
+    justify-content:center;
+}
+
+footer a {
+    color:coral;
+    width:80%;
+}
+
+.note {
+    text-align: right;
+    margin-right:4%
+}
+
+@media screen and (max-width: 862px) {
+    .block_img img {
+        width: 90%;
+    }
+}
+
+

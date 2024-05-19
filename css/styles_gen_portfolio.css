@@ -1,0 +1,201 @@
+/*Général*/
+@font-face {
+    font-family: "Luciole";
+    src: url("../polices/Luciole/Luciole-Regular.ttf") format("TrueType");
+}
+
+* {
+    width:auto;
+    height:auto;
+}
+
+.burger_button {
+    display: none;
+}
+
+body {
+    font-family: "Luciole";
+    margin:0;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #24445C;
+}
+
+footer {
+    position:relative;
+    background-color: #24445C;
+    color:white;
+    padding-bottom: 3%;
+}
+
+/*Canvas*/
+
+#myCanvas {    
+    position:absolute;
+    top:0; left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1600px) {
+/*Section skills*/    
+    .txt_hover {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+/*Navigateur*/
+   #navbar {
+        padding-top: 1%;
+   }
+
+   nav div {
+    width: 15%;
+    font-size: 100%;
+}
+
+/*Section Welcome*/
+    
+    #welcome {
+        height: 350px;
+    }
+    
+    #welcome img {
+        display:none;
+    }
+
+    .aside {
+        display:none;
+    }
+
+    .lien_hover.media_project {
+        display:none;
+    }
+
+/*Section créations*/
+    .block_projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0 10% 0 10%;
+        font-size: 80%;
+    }
+
+/*section skills*/
+
+.full_tech {
+    max-width: 40%;
+}
+
+.txt_hover {
+    font-size: 100%;
+}
+}
+
+/*Section contact*/
+    
+    .links .logos {
+        width: 18%;
+    }
+
+    .links span {
+        display: none;
+    }
+
+@media screen and (max-width: 1050px) {
+/*section skills*/
+    .full_tech {
+        max-width: 50%;
+    }
+}  
+
+
+@media screen and (max-width: 785px) {
+/* Burger */
+
+.lang_button {
+    width: 30%;
+}
+
+.burger_button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+    padding-right: 5%;
+}
+
+.burger_button .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.burger_button.open .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.burger_button.open .line:nth-child(2) {
+    opacity: 0;
+}
+.burger_button.open .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Menu déroulant */
+ul {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 2%;
+    right: 15%;
+    background-color: #24445C;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+ul.open {
+    display: flex;
+    padding: 0;
+    width: 35%;
+}
+
+ul li {
+    margin-left:0;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+/*Section projets*/
+    .block_projects {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 25px;   
+        padding: 0 15% 0 15%;         
+    }
+
+/*section skills*/
+.full_tech {
+    max-width: 90%;
+}
+
+/*Footer*/
+    .links {
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 80%;
+        margin: 0;
+    }     
+}

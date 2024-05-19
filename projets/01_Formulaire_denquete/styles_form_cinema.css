@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "theanodidotregular";
+  src: url("polices/theanodidot-regular-webfont.eot");
+  src: url("polices/theanodidot-regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("polices/theanodidot-regular-webfont.svg#theanodidotregular") format("svg"),
+       url("polices/theanodidot-regular-webfont.ttf") format("truetype"),
+       url("polices/theanodidot-regular-webfont.woff")format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+#title, #description {
+  text-align:center;
+  color:white;
+}
+
+body {
+  background-image: url("rencontre.jpg");
+  background-size:cover;
+  font-family: "theanodidotregular" "comic sans MS" "verdana";
+}
+
+#survey-form {
+  display:flex;
+  justify-content: center;
+}
+
+fieldset {
+  width:40%;
+  background-color:rgb(35, 26, 92);
+  color:white;
+  border-radius:2%;
+  border-color: rgb(32, 32, 151);
+}
+
+label {
+  margin:0 0 1% 0;
+}
+
+div {
+  margin-bottom: 5%;
+}
+
+.champs {
+  display:flex;
+  flex-direction: column;
+}
+
+.listing {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1%;
+  padding: 0 10% 0 10%;
+}
+
+.listing p {
+  width:100%;
+}
+
+textarea {
+  resize:none;
+}
+
+.submit_div {
+  display:flex;
+}
+
+#submit {
+  flex-grow:1;
+  color:white;
+  background-color: rgb(97, 32, 107);
+  border-radius:2%;
+  border-color:white;
+}
+
+@media screen and (max-width: 1320px) {
+  .listing {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;    
+    padding:2%;
+  }
+
+  fieldset {
+    width:80%;
+  }
+}
