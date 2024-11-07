@@ -83,12 +83,12 @@ footer {
     }
 
 /*Section créations*/
-    .block_projects {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding: 0 10% 0 10%;
-        font-size: 80%;
-    }
+.block_projects {
+    grid-template-columns: 20em 20em;
+    grid-template-rows: 20em 20em;
+    padding: 0 10% 0 10%;
+    font-size: 80%;
+}
 
 /*section skills*/
 
@@ -99,17 +99,16 @@ footer {
 .txt_hover {
     font-size: 100%;
 }
-}
+
 
 /*Section contact*/
-    
-    .links .logos {
-        width: 18%;
-    }
+.links .logos {
+    width: 18%;
+}
 
-    .links span {
-        display: none;
-    }
+.links span {
+    display: none;
+}}
 
 @media screen and (max-width: 1050px) {
 /*section skills*/

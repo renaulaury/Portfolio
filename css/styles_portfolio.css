@@ -132,7 +132,7 @@ li {
 .block_projects {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 20em);
     grid-row-gap: 25px;
     grid-column-gap: 8%;
     justify-content: center;
@@ -147,6 +147,10 @@ li {
     padding: 1%;    
     box-sizing: border-box;    
 }
+
+/* .block_projects a {
+    height: 50%
+} */
 
 .lien_hover {
     position:relative;
